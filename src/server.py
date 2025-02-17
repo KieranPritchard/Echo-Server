@@ -22,4 +22,6 @@ while True:
     client, address = socket.accept()
     print(f"Connected to client at: {address}")
 
-    client.close()
+    echo_receive = client.recv(1024).decode()
+
+    client.send(echo_receive.encode())

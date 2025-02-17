@@ -15,5 +15,12 @@ except socket.error as e:
 try:
     socket.connect((host_ip_address, port))
     print(f"Successfully connected on port: {port}.")
+
+    while True:
+        echo_input = input("Please input message to send: ")
+        
+        # Sends message to echo
+        socket.send(echo_input.encode())
+
 except:
     print(f"Error connecting to host on port: {port}.")
