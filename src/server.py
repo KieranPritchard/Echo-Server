@@ -18,10 +18,16 @@ print("Socket is listening")
 
 # Keeps the server program listening for incoming connections
 while True:
-    # Accepts connections to from clients
+    # Accepts connections to from client
     client, address = socket.accept()
     print(f"Connected to client at: {address}")
 
+    # Receives input from client
     echo_receive = client.recv(1024).decode()
+    print(f"Received from client: {echo_receive}")
 
+    # Sends client echo back
     client.send(echo_receive.encode())
+
+    # Closes the connection
+    client.close()
