@@ -8,3 +8,6 @@ print("Socket created successfully.")
 
 socket.bind(host_ip, port)
 print(f"Socket binded to port: {port}.")
+
+socket.listen()
+print("Socket is listening")
