@@ -2,7 +2,7 @@ import socket
 
 # Host address and port numbers 
 host_ip_address = "127.0.0.1"
-port = 80
+port = 1024
 
 #creates the socket
 try:

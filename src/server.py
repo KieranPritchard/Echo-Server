@@ -1,7 +1,7 @@
 import socket
 
 host_ip = "127.0.0.1"
-port = 80
+port = 1024
 
 socket = socket.socket()
 print("Socket created successfully.")
