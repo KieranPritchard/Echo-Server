@@ -5,15 +5,15 @@ host_ip = "127.0.0.1"
 port = 1025
 
 # Socket object to create
-socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 print("Socket created successfully.")
 
 # Socket bind to host
-socket.bind((host_ip, port))
+server_socket.bind((host_ip, port))
 print(f"Socket binded to port: {port}.")
 
 # Socket listening for connections
-socket.listen()
+server_socket.listen()
 print("Socket is listening")
 
 # Keeps the server program listening for incoming connections
