@@ -1,5 +1,8 @@
 import socket
-from ssl import socket_error
+
+# Host address and port numbers 
+host_ip_address = "127.0.0.1"
+port = 80
 
 #creates the socket
 try:
