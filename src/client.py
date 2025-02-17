@@ -10,3 +10,9 @@ try:
     print("Socket was created")
 except socket.error as e:
     print(f"Socket creation encountered error: {e}")
+
+try:
+    socket.connect(host_ip_address, port)
+    print(f"Successfully connected on port: {port}.")
+except:
+    print(f"Error connecting to host on port: {port}.")
