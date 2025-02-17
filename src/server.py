@@ -11,3 +11,12 @@ print(f"Socket binded to port: {port}.")
 
 socket.listen()
 print("Socket is listening")
+
+while True:
+
+    client, address = socket.accept()
+    print(f"Connected to client at: {address}")
+
+    client.send("You have successfully connected.".encode())
+
+    client.close()
