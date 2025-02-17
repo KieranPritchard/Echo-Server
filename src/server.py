@@ -6,7 +6,7 @@ port = 80
 socket = socket.socket()
 print("Socket created successfully.")
 
-socket.bind(host_ip, port)
+socket.bind((host_ip, port))
 print(f"Socket binded to port: {port}.")
 
 socket.listen()

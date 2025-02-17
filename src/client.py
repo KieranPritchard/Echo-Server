@@ -14,5 +14,7 @@ except socket.error as e:
 try:
     socket.connect(host_ip_address, port)
     print(f"Successfully connected on port: {port}.")
+    
+    print(socket.recv(1024).decode)
 except:
     print(f"Error connecting to host on port: {port}.")
