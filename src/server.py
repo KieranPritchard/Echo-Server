@@ -4,17 +4,11 @@ import socket
 host_ip = "127.0.0.1"
 port = 1025
 
-# Socket object to create
+# Socket object to create to socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-print("Socket created successfully.")
-
-# Socket bind to host
 server_socket.bind((host_ip, port))
-print(f"Socket binded to port: {port}.")
-
-# Socket listening for connections
 server_socket.listen()
-print("Socket is listening")
+print(f"Server started, listening on {host_ip}:{port}")
 
 # Keeps the server program listening for incoming connections
 while True:
