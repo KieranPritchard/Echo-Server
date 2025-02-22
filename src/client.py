@@ -1,9 +1,13 @@
 import socket
 import sys
+import json
+
+with open("config.json", "r") as file:
+    config_data = json.load(file)
 
 # Host address and port numbers.
-host_ip_address = "127.0.0.1"
-port = 1025
+host_ip_address = config_data["server"]["host"]
+port = config_data["server"]["port"]
 
 #creates the socket.
 try:

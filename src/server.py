@@ -1,8 +1,12 @@
 import socket
+import json
 
-# Host address and port number.
-host_ip = "127.0.0.1"
-port = 1025
+with open("config.json", "r") as file:
+    config_data = json.load(file)
+
+# Host address and port numbers.
+host_ip = config_data["server"]["host"]
+port = config_data["server"]["port"]
 
 # Socket object to create to socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
