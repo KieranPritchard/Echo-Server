@@ -24,10 +24,18 @@ try:
         if echo_input != "quit":
             # Sends message to echo
             client_socket.send(echo_input.encode())
+
             echo_receive = client_socket.recv(1024)
-            print(f"Echo Received: {echo_receive}")
+            if not echo_receive:
+                print("The server closed the connection")
+                break
+
+            print(f"Echo Received: {echo_receive.decode()}")
         else:
+            print("Closing connection...")
+            client_socket.close()
             sys.exit()
 
 except:
     print(f"Error connecting to host on port: {port}.")
+    client_socket.close()
