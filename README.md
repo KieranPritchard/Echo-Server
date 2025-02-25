@@ -1,36 +1,42 @@
-#Documentaiton
 # Echo Server
 
 <div align="center">
 
-<img alt="GitHub Created At" src="https://img.shields.io/github/created-at/KieranPritchard/:repo">
+<img alt="GitHub Created At" src="https://img.shields.io/github/created-at/KieranPritchard/Echo-Server">
 
-<img alt="GitHub License" src="https://img.shields.io/github/license/KieranPritchard/:repo">
+<img alt="GitHub License" src="https://img.shields.io/github/license/KieranPritchard/Echo-Server">
 
-<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/KieranPritchard/:repo">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/KieranPritchard/Echo-Server">
 
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KieranPritchard/:repo">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KieranPritchard/Echo-Server">
 
-<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/KieranPritchard/:repo">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/KieranPritchard/Echo-Server">
 
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/KieranPritchard/:repo">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/KieranPritchard/Echo-Server">
 
 </div>
+
 ## Project Description
+
 ### Objective 
 To build two programs to strengthen knowledge in Pythons socket library, as i haven't used it before. 
+
 ### Features
 * Features both the client app and server app.
 * Allows client program to send commands to the server program, then the server echoes back.
 * Uses a JSON file for host and port configuration.
+
 ### Technologies and Tools Used
 * **Language:** Python
 * **Frameworks/Library's:** Sockets, JSON, and sys.
 * **Tools:** Git, Github, VS Code.
+
 ### Challenges Faced
 I have had trouble with wrapping my head around this library. I think it was mainly due to me not using it before however, I think in time I will become more familiar with it. 
+
 ### Outcome
 Successfully created the echo server apps, for client and server. Started to build skill in using this python library, hoping to do more projects using this module.
+
 ### Next Steps
 To use this library to build other projects and eventually gain advanced knowledge with this module.
 ## How to Use the Project
